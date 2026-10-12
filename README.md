@@ -27,34 +27,33 @@
 
 ## 安装
 
-在项目根目录创建虚拟环境并安装依赖：
+本项目使用 Conda 管理 Python 虚拟环境。在项目根目录执行：
 
 ```bash
-python -m venv .venv
-```
-
-Windows PowerShell：
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-Windows CMD：
-
-```bat
-.venv\Scripts\activate
-```
-
-Linux/macOS：
-
-```bash
-source .venv/bin/activate
-```
-
-安装运行和测试依赖：
-
-```bash
+conda create -n project-class-tool python=3.11 -y
+conda activate project-class-tool
 python -m pip install -r requirements.txt
+```
+
+如果 Conda 尚未初始化当前终端，请先执行：
+
+```bash
+conda init
+```
+
+然后重新打开终端，再执行环境创建和激活命令。
+
+确认当前使用的是项目 Conda 环境：
+
+```bash
+conda env list
+python --version
+```
+
+日后进入项目时，只需要激活已有环境：
+
+```bash
+conda activate project-class-tool
 ```
 
 ## 配置
