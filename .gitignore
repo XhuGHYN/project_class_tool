@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -218,3 +219,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+=======
+# Sensitive local configuration
+.env
+.env.*
+!.env.example
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local runtime data
+.sessions/
+>>>>>>> dabae6a (第七周_project_class_tool)

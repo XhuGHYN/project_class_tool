@@ -1,0 +1,17 @@
+llm:
+  base_url: "https://wawazz.xyz/v1"
+  model: "gpt-6-luna"
+  temperature: 0.7
+  timeout: 60
+  max_retries: 3
+
+agent:
+  work_dir: "."
+  max_iterations: 10
+
+session:
+  dir: ".sessions"
+
+tools:
+  shell_timeout: 10
+  search_max_results: 100
